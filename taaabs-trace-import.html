@@ -1,0 +1,36 @@
+
+<dom-module id="taaabs-trace-import">
+
+  <link rel="import" type="css" href="../samotracesjs/dist/samotraces.css"/>
+
+  <template>
+    <div id="importer"></div>
+    <content></content>
+  </template>
+
+  <script>
+    /* global Polymer, Samotraces */
+
+    /**
+     * `<taaabs-trace-import>` is a wrapper for Samotraces.Ui.Widgets.ImportTrace.
+     *  The purpose of this Widget is to allow the user to choose and import
+     *  a CSV stored Traces.
+     *
+     * @element taaabs-trace-import
+     */
+    Polymer({
+      is: 'taaabs-trace-import',
+      properties: {
+        trace: {
+          type: Object,
+          notify: true,
+          reflectToAttribute: true,
+        }
+      },
+      attached: function() {
+        var widgetElement = this.$$('#importer');
+        new Samotraces.Ui.Widgets.ImportTrace(widgetElement, this.trace);
+      }
+    });
+  </script>
+</dom-module>

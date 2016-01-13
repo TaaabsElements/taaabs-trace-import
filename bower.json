@@ -1,0 +1,28 @@
+{
+  "name": "taaabs-trace-import",
+  "version": "1.0.0",
+  "description": "`<taaabs-trace-import>` is a wrapper for Samotraces.Ui.Widgets.ImportTrace.",
+  "keywords": [
+    "web-components",
+    "polymer",
+    "taaabs"
+  ],
+  "authors": [
+    "TaaabsTeam"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TaaabsElements/taaabs-trace-import.git"
+  },
+  "main": "taaabs-trace-import.html",
+  "license": "https://github.com/TaaabsElements/taaabs-trace-import/LICENSE",
+  "dependencies": {
+    "polymer": "polymer/polymer#^1.0.0",
+    "samotracesjs": "https://github.com/liris-tweak/samotraces.js.git",
+  },
+  "devDependencies": {
+    "iron-component-page": "polymerelements/iron-component-page#^1.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "ignore": []
+}
